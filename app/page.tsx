@@ -24,7 +24,7 @@ const products = [
   { name: "كوكيز", category: "بسكويت", image: "/images/cookies.jpg" },
 ];
 
-const taybaVideos = ["/videos/tayba1.mp4", "/videos/tayba2.mp4", "/videos/tayba3.mp4"];
+const taybaVideos = ["/videos/tayba2.mp4"];
 const marketVideos = ["/videos/market1.mp4"];
 
 export default function Home() {
@@ -90,17 +90,18 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-10">
-        <h2 className="mb-8 text-center text-5xl font-black text-[#ffd0a3]">
-          فيديوهات من داخل طيبة
-        </h2>
+  <h2 className="mb-8 text-center text-5xl font-black text-[#ffd0a3]">
+    فيديوهات من داخل طيبة
+  </h2>
 
-        <div className="grid gap-6 md:grid-cols-3">
-          {taybaVideos.map((video) => (
-            <video key={video} src={video} controls muted preload="metadata" className="h-[500px] w-full rounded-[2rem] object-cover shadow-2xl" />
-          ))}
-        </div>
-      </section>
-
+  <video
+    src="/videos/tayba1.mp4"
+    controls
+    muted
+    preload="metadata"
+    className="h-[750px] w-full rounded-[2rem] object-cover shadow-2xl"
+  />
+</section>
       <section id="products" className="mx-auto max-w-7xl px-4 py-16">
         <h2 className="mb-10 text-center text-5xl font-black text-[#ffd0a3]">
           أصنافنا
@@ -148,23 +149,28 @@ export default function Home() {
       </section>
 
       <section id="doctor" className="mx-auto max-w-7xl px-4 py-16">
-        <div className="rounded-[2rem] border border-[#c9a86a]/40 bg-gradient-to-br from-[#321226] to-[#160807] p-7 shadow-2xl">
-          <h2 className="text-center text-5xl font-black text-[#ffd0a3]">
-            الدكتور ماركت
-          </h2>
+  <div className="rounded-[2rem] border border-[#c9a86a]/40 bg-gradient-to-br from-[#321226] to-[#160807] p-7 shadow-2xl">
 
-          <p className="mx-auto mt-5 max-w-3xl text-center text-lg leading-9 text-white/80">
-            بجوار طيبة من الفينو للجاتوه فرع العجوزة  ماركت تابع لنا 
-            <strong className="text-[#ffd0a3]"> الدكتور لتجارة المواد الغذائية</strong>
-          </p>
+    <h2 className="text-center text-5xl font-black text-[#ffd0a3]">
+      الدكتور ماركت
+    </h2>
 
-          <div className="mt-8 grid gap-5 md:grid-cols-1">
-            {marketVideos.map((video) => (
-              <video key={video} src={video} controls muted preload="metadata" className="h-[500px] w-full rounded-[2rem] object-cover shadow-2xl" />
-            ))}
-          </div>
-        </div>
-      </section>
+    <p className="mx-auto mt-5 max-w-3xl text-center text-lg leading-9 text-white/80">
+     بجوار طيبة من الفينو للجاتوه فرع العجوزة  ماركت تابع لنا 
+      <strong className="text-[#ffd0a3]">
+        {" "}الدكتور لتجارة المواد الغذائية
+      </strong>
+    </p>
+
+    <video
+      src="/videos/market1.mp4"
+      controls
+      muted
+      preload="metadata"
+      className="mt-8 h-[750px] w-full rounded-[2rem] object-cover shadow-2xl"
+    />
+  </div>
+</section>
 
       <section className="px-4 py-16 text-center">
         <Image src="/images/rigosa.png" alt="Rigosa" width={220} height={220} className="mx-auto mb-7 h-44 w-44 rounded-full bg-[#fff4e4] object-contain p-3 shadow-[0_0_60px_rgba(201,168,106,.9)]" />
