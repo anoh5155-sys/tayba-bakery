@@ -208,6 +208,40 @@ export default function Home() {
       </section>
 
       <section className="px-4 py-16 text-center">
+        <section className="mx-auto max-w-7xl px-4 py-10">
+  <h2 className="mb-8 text-center text-5xl font-black text-[#ffd0a3]">
+    فيديوهات من داخل طيبة
+  </h2>
+
+  <div className="grid gap-6 md:grid-cols-3">
+    <video
+      src="/videos/market11.mp4"
+      controls
+      autoPlay
+      muted
+      loop
+      className="h-[500px] w-full rounded-[2rem] object-cover shadow-2xl"
+    />
+
+    <video
+      src="/videos/market12.mp4"
+      controls
+      autoPlay
+      muted
+      loop
+      className="h-[500px] w-full rounded-[2rem] object-cover shadow-2xl"
+    />
+
+    <video
+      src="/videos/market13.mp4"
+      controls
+      autoPlay
+      muted
+      loop
+      className="h-[500px] w-full rounded-[2rem] object-cover shadow-2xl"
+    />
+  </div>
+</section>
         <Image
           src="/images/rigosa.png"
           alt="Rigosa"
